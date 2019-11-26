@@ -2,6 +2,7 @@
 @import '_global';
 @import '_fonts';
 
+
 .header__top{
   background-color: $bg; 
   &-inner{    
@@ -14,9 +15,10 @@
 
 .header__box-btn{
   padding: 10px 15px;
-  border: 2px solid $btn;
+  border: 1px solid $btn;
   border-radius: 22px;
   font-size: 14px;
+  
 }
 .register,
 .login{
@@ -77,3 +79,46 @@
     outline: none;
   }
 }
+
+//start banner section
+
+.banner{
+  background-color: #274acd;
+  padding-top: 180px;
+  padding-bottom: 235px;
+}
+.banner__inner{
+  color: #f3f3f8;
+  text-align: center;
+  &-title{
+    font-size: 60px;
+    line-height: 70px;
+    
+    margin-bottom: 25px;
+    span{
+      display: block;
+      font-weight: 700;
+    }
+  }
+  &-subtitle{
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+ 
+}
+.banner__btm{
+  padding: 20px 30px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  &-all{
+    background-color: #fff;
+    color: #274acd;
+  }
+  & + &{
+    margin-left: 25px;
+  }
+}
+
+//end banner section
