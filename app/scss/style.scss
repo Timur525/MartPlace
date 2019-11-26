@@ -1,8 +1,79 @@
-html{
-  box-sizing: border-box;
+@import '_vars';
+@import '_global';
+@import '_fonts';
+
+.header__top{
+  background-color: $bg; 
+  &-inner{    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-*,
-*::before,
-*::after{
-  box-sizing: inherit;
+
+.header__box-btn{
+  padding: 10px 15px;
+  border: 2px solid $btn;
+  border-radius: 22px;
+  font-size: 14px;
+}
+.register,
+.login{
+  background-color: #fff;
+  color: $btn;
+  margin: 0 5px;
+}
+.seller{
+  background-color: $btn;
+  color: #fff;
+  margin-right: 50px;
+}
+.header__menu-inner{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center
+}
+.menu__list {
+   
+  li{
+    display: inline-block;
+     font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    & + li{
+      margin-left: 30px;
+    }
+  }
+  a{
+    color: #333;
+    text-transform: uppercase;
+   
+  }
+}
+.header__menu-search{
+  position: relative;
+  input{
+    width: 360px;
+    height: 45px;
+    padding: 0 80px 0 25px;
+    border-radius: 25px;
+    border: 1px solid #d9dfe5;
+    outline: none;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  button{
+    background-color: $btn;
+    position: absolute;
+    width: 70px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #d9dfe5;
+    right: 0;
+    top: 0;
+    outline: none;
+  }
 }
