@@ -1,2 +1,7 @@
 $bg: #eff1f5;
 $btn: #0674ec;
+$fl: #7347c1;
+@mixin f500 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
